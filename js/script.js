@@ -6,18 +6,22 @@ input.addEventListener("click", function(e) {
     e.preventDefault();
 
     var name = document.querySelector("#name").value;
-    if (name == "") {
-        alert("Name must be filled out");
-        return false;
-    }
+    
     var email = document.querySelector("#email").value;
-    if (email == "") {
-        alert("Email must be filled out");
-        return false;
-    }
+    
     const content = document.querySelector("main");
 
 
+    if (name == "") {
+        alert("Nome está vazio!");
+        return false;
+    }
+    
+    if (email == "") {
+        alert("E-mail Invalido!");
+        return false;
+    }
+   
     
     var segundos = 0;
     var timer = setInterval(
