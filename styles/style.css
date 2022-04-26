@@ -8,6 +8,12 @@ body{
     padding: 15px;
 }
 
+aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 header {
     display: flex; /* disposição dos elementos*/
     flex-direction: row;
@@ -88,7 +94,7 @@ form {
 
 #submit {
     height: 20px;
-    width: 50%;
+    width: 100%;
     background-color: rgb(33,33,33);
     color: white;
     font-weight: bold;
@@ -106,4 +112,11 @@ input {
     border-radius: 20px;
     border: none;
     font-size: 15px;
+}
+
+#content-user {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
 }

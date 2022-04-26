@@ -1,22 +1,41 @@
-@media screen and (max-width: 760px){
-    header{
+@media screen and (max-width: 1148px){
+
+    a {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    header {
         flex-direction: column;
     }
 
-    main{
+    main {
         flex-direction: column;
     }
 
-    h2{
-        font-size:38px;
+    h2 {
+        font-size: 1.5em;
     }
 
-    form{
+    form {
         margin: 0 auto;
+        
+    }
+
+    #submit {
+        padding: 15px;
+        font-size: 2em;
+        width: 28rem;
+        height: 2.2em;
     }
 
     input{
         align-self: center;
+        font-size: 2em;
+        height: 1.5em;
     }
 
     img{
