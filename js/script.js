@@ -1,12 +1,23 @@
 var input = document.querySelector("#submit");
 
+
 input.addEventListener("click", function(e) {
 
     e.preventDefault();
 
-    const name = document.querySelector("#name").value;
-    const email = document.querySelector("#email").value;
+    var name = document.querySelector("#name").value;
+    if (name == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    var email = document.querySelector("#email").value;
+    if (email == "") {
+        alert("Email must be filled out");
+        return false;
+    }
     const content = document.querySelector("main");
+
+
     
     var segundos = 0;
     var timer = setInterval(
@@ -24,4 +35,5 @@ input.addEventListener("click", function(e) {
 
         }, 1000);
 })
+
 
